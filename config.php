@@ -2,12 +2,11 @@
     session_start(); 
 
     $servername = "localhost";
-    $username = "rafael";
     $password = "123456";
     $dbname = "login";
 
 
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    $conn = new mysqli($servername, $password, $dbname);
 
     // Verifica a conexão
     if ($conn->connect_error) {
